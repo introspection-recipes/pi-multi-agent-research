@@ -1,0 +1,25 @@
+{
+  "name": "@introspection/multi-agent-research-recipe",
+  "version": "0.1.0",
+  "description": "Anthropic's multi-agent research system (orchestrator-worker) reproduced as an Introspection (Pi) recipe.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "agents": [
+      "./agents/*.yaml"
+    ],
+    "skills": [
+      "./skills/*/SKILL.md"
+    ],
+    "extensions": [
+      "./extensions/*.ts",
+      "./extensions/*/index.ts"
+    ]
+  }
+}

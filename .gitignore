@@ -1,0 +1,25 @@
+# Runtime secrets — never commit
+auth.json
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Dependencies and build artifacts
+node_modules
+node_modules/
+**/node_modules
+**/node_modules/
+**/.next/
+**/out/
+**/dist/
+**/.turbo/
+**/.vercel/
+**/tsconfig.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS cruft
+.DS_Store
+**/._*
