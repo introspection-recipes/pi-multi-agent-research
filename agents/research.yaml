@@ -3,10 +3,12 @@ description: |
   A focused research worker spawned by the lead researcher to investigate one well-scoped slice of a larger question. Searches the web and reads sources in parallel, then returns a concise, source-backed findings report. Spawn several in parallel for independent slices. Each one needs a clear objective, the output format you expect, tool/source guidance with a tool-call budget, and boundaries so it does not overlap its siblings.
 model:
   name: anthropic/claude-sonnet-4-6
-  reasoning_effort: medium
+  thinking_level: medium
 tools:
   - WebSearch
   - WebFetch
+skills: []
+subagents: []
 system_instructions:
   mode: replace
   content: |
