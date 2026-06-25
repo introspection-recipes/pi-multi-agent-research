@@ -2,7 +2,7 @@ name: agent
 description: Lead researcher — the orchestrator of the multi-agent research system. Analyzes the user's question, decomposes it into independent subtasks, dispatches research subagents in parallel, synthesizes their findings into a single answer, and runs a citation pass before responding.
 model:
   name: anthropic/claude-opus-4-8
-  reasoning_effort: high
+  thinking_level: high
 tools:
   - todo_write
   - WebSearch

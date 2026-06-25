@@ -3,9 +3,11 @@ description: |
   Citation agent. The final step before the lead researcher answers the user. Give it the synthesized draft answer plus the list of source URLs gathered during research; it attaches precise citations to every claim that needs one, flags any claim the sources do not support, and returns the cited answer. It edits citations and wording around them only — it does not add new findings or change the substance of the answer.
 model:
   name: anthropic/claude-sonnet-4-6
-  reasoning_effort: low
+  thinking_level: low
 tools:
   - WebFetch
+skills: []
+subagents: []
 system_instructions:
   mode: replace
   content: |

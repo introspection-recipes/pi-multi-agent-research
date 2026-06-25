@@ -1,5 +1,5 @@
 {
-  "name": "@introspection/multi-agent-research-recipe",
+  "name": "@introspection-recipes/pi-multi-agent-research",
   "version": "0.1.0",
   "description": "Anthropic's multi-agent research system (orchestrator-worker) reproduced as an Introspection (Pi) recipe.",
   "type": "module",
