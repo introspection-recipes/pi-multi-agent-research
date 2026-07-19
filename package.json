@@ -6,12 +6,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "check": "recipes check . --profile ci",
-    "check:json": "recipes check . --profile ci --json",
     "prepare": "git config core.hooksPath .githooks || true"
-  },
-  "devDependencies": {
-    "@introspection-ai/pi-recipes": "^0.6.0"
   },
   "peerDependencies": {
     "@earendil-works/pi-agent-core": "*",
