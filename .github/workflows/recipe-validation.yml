@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: introspection-org/pi-recipes-action@v0.1.0
+      - uses: introspection-org/pi-recipes-action@v0
