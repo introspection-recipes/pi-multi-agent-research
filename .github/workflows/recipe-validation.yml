@@ -17,14 +17,14 @@ jobs:
         with:
           node-version: 24
 
-      - run: npm install --no-audit --no-fund
-
-      - name: Validate recipe
-        run: npm run check
+      - name: Validate recipe (always latest checker)
+        run: |
+          echo "Using @introspection-ai/pi-recipes@$(npm view @introspection-ai/pi-recipes version)"
+          npx -y -p @introspection-ai/pi-recipes@latest recipes check . --profile ci
 
       - name: Write structured report
         if: always()
-        run: npm run check:json > recipe-check-report.json || true
+        run: npx -y -p @introspection-ai/pi-recipes@latest recipes check . --profile ci --json > recipe-check-report.json || true
 
       - name: Upload recipe check report
         if: always()

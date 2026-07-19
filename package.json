@@ -11,7 +11,7 @@
     "prepare": "git config core.hooksPath .githooks || true"
   },
   "devDependencies": {
-    "@introspection-ai/pi-recipes": "^0.6.0"
+    "@introspection-ai/pi-recipes": "^0.10.4"
   },
   "peerDependencies": {
     "@earendil-works/pi-agent-core": "*",
